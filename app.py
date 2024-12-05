@@ -7,7 +7,7 @@ from ultralytics import YOLO
 app = Flask(__name__)
 
 # Load the YOLOv8 model
-model = YOLO("yolo11s.pt")
+model = YOLO("best.pt")
 names = model.model.names
 
 @app.route('/')
