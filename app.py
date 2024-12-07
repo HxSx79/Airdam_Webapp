@@ -20,7 +20,7 @@ def start_webcam():
 
 def detect_objects_from_webcam():
     count=0
-    camera_id = "/dev/video1"
+    camera_id = "/dev/video0"
     cap = cv2.VideoCapture(camera_id, cv2.CAP_V4L2)  # Use CSI camera or USB camera
     while True:
         ret, frame = cap.read()
